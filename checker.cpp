@@ -9,7 +9,7 @@ bool SpO2isOk(float spo2){
 }
   
 bool respRateIsOk(float respRate){
-  return (bpm > 30 && bpm < 95)
+  return (respRate > 30 && respRate < 95);
 }
 
 bool vitalsAreOk(float bpm, float spo2, float respRate) {
