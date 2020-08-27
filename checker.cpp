@@ -11,6 +11,7 @@ bool anyVitalIsOk(float value, int low, int high){
 //for vital with only cutoff
 bool anyVitalIsOk(float value, int cutOff){
   return value>=cutOff;
+}
 
   
 bool vitalsAreOk(float bpm, float spo2, float respRate) {
