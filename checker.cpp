@@ -47,11 +47,13 @@ bool vitalIsOk(AlertType *alert, char* vitalname, float value, int low, int high
   if (value<low)
   {
     alert->sendAlert(vitalname, "is low");
+    return false;
   }
 
   else if (value>high)
   {
     alert->sendAlert(vitalname, "is high");
+    return false;
   }
 
   else
